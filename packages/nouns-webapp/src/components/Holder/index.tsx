@@ -33,7 +33,6 @@ const Holder: React.FC<HolderProps> = props => {
   }
 
   const holder = data && data.noun.owner.id;
-  
 
   const nonNounderNounContent = (
     <a
@@ -43,9 +42,9 @@ const Holder: React.FC<HolderProps> = props => {
       className={classes.link}
     >
       <Tooltip
-        tip="View on Etherscan"
+        tip="View on Blockscout"
         tooltipContent={(tip: string) => {
-          return <Trans>View on Etherscan</Trans>;
+          return <Trans>View on Blockscout</Trans>;
         }}
         id="holder-etherscan-tooltip"
       >

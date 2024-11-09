@@ -139,7 +139,7 @@ const ChangeDelegatePannel: React.FC<ChangeDelegatePannelProps> = props => {
         }
       />,
       <NavBarButton
-        buttonText={<Trans>View on Etherscan</Trans>}
+        buttonText={<Trans>View on Blockscout</Trans>}
         buttonStyle={NavBarButtonStyle.DELEGATE_PRIMARY}
         onClick={() => {
           window.open(etherscanTxLink, '_blank')?.focus();

@@ -21,8 +21,8 @@ interface WinnerProps {
 const Winner: React.FC<WinnerProps> = props => {
   const { winner, isNounders, nounId } = props;
   const activeAccount = useAppSelector(state => state.account.activeAccount);
-  
-  console.log({winner, isNounders})
+
+  console.log({ winner, isNounders });
 
   const isCool = useAppSelector(state => state.application.isCoolBackground);
   const isMobile = isMobileScreen();
@@ -62,9 +62,9 @@ const Winner: React.FC<WinnerProps> = props => {
   ) : (
     <ShortAddress size={40} address={winner} avatar={true} />
   );
-  
-  const rewardRecipientString = rewardRecipient(nounId)
-  
+
+  const rewardRecipientString = rewardRecipient(nounId);
+
   const nounderNounContent = (
     <a
       href={buildEtherscanAddressLink(rewardRecipientString)}
@@ -73,9 +73,9 @@ const Winner: React.FC<WinnerProps> = props => {
       className={classes.link}
     >
       <Tooltip
-        tip="View on Etherscan"
+        tip="View on Blockscout"
         tooltipContent={(tip: string) => {
-          return <Trans>View on Etherscan</Trans>;
+          return <Trans>View on Blockscout</Trans>;
         }}
         id="holder-etherscan-tooltip"
       >
