@@ -6,9 +6,9 @@ const getBaseURL = (network: ChainId) => {
     case ChainId.Rinkeby:
       return 'https://rinkeby.etherscan.io/';
     case ChainId.Goerli:
-      return 'https://api-goerli.etherscan.io/';
+      return 'https://eth-goerli.blockscout.com//';
     default:
-      return 'https://etherscan.io/';
+      return 'https://eth.blockscout.com/';
   }
 };
 
@@ -25,12 +25,7 @@ export const buildEtherscanAddressLink = (address: string): string => {
 };
 
 export const buildEtherscanTokenLink = (tokenContractAddress: string, tokenId: number): string => {
-  const path = `token/${tokenContractAddress}?a=${tokenId}`;
-  return new URL(path, BASE_URL).toString();
-};
-
-export const buildEtherscanHoldingsLink = (address: string): string => {
-  const path = `tokenholdings?a=${address}`;
+  const path = `token/${tokenContractAddress}/instance/${tokenId}`;
   return new URL(path, BASE_URL).toString();
 };
 

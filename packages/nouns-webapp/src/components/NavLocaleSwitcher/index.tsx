@@ -130,6 +130,7 @@ const NavLocaleSwitcher: React.FC<NavLocalSwitcherProps> = props => {
                 dropDownStyle,
                 classes.desktopLanguageButton,
               )}
+              key={locale}
               onClick={() => setLocale(locale)}
             >
               {LOCALE_LABEL[locale]}

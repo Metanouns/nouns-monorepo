@@ -399,8 +399,8 @@ msgstr "Nounの誕生日を取得できませんでした"
 
 #: src/components/Footer/index.tsx
 #: src/components/NounInfoCard/index.tsx
-msgid "Etherscan"
-msgstr "Etherscan"
+msgid "Blockscout"
+msgstr "Blockscout"
 
 #: src/pages/Vote/index.tsx
 msgid "Execute"
@@ -1008,7 +1008,7 @@ msgstr "すべての入札を表示"
 #: src/components/profileEvent/event/DesktopProposalVoteEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
 #: src/components/profileEvent/event/DesktopTransferEvent/index.tsx
-msgid "View on Etherscan"
+msgid "View on Blockscout"
 msgstr "イーサスキャンで見る"
 
 #: src/components/Bid/index.tsx
